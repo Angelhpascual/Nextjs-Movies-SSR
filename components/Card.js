@@ -22,7 +22,6 @@ const CardStyled = styled.div`
   border-radius: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   margin-top: 50px;
-  margin-bottom: 20px;
 
   .body {
     padding: 20px;
