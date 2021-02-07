@@ -1,11 +1,14 @@
 import fetch from "isomorphic-unfetch";
+import Card from "components/Card";
 
 const Home = ({ movies }) => {
   console.log(movies);
 
   return (
     <div className="container">
-      <h1>This is Front Page</h1>
+      {movies.map((movie) => (
+        <Card key={movie.id} movie={movie} />
+      ))}
     </div>
   );
 };
