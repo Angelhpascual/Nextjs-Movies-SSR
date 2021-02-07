@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import { rem } from "polished";
 
 const Header = ({ isDark }) => {
   return (
@@ -23,8 +24,8 @@ const HeaderStyled = styled.header`
     .logo-text {
       color: #333333;
       font-weight: bold;
-      font-size: 20px;
-      margin-left: 20px;
+      font-size: ${rem(20)};
+      margin-left: ${rem(20)};
     }
   }
 `;
