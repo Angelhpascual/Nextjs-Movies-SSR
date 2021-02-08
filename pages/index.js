@@ -1,5 +1,6 @@
 import fetch from "isomorphic-unfetch";
 import Card from "components/Card";
+import { Box, Flex } from "reflexbox";
 
 const Home = ({ movies }) => {
   console.log(movies);

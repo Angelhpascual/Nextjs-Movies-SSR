@@ -3,6 +3,7 @@ import Header from "components/Header";
 import { ThemeProvider } from "@emotion/react";
 
 const theme = {
+  breakpoints: ["360px", "780px", "1024px", "1280px", "1600px"],
   colors: {
     primary: "#ff0000",
   },

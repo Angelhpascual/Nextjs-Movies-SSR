@@ -5,7 +5,7 @@ const Card = ({ movie }) => {
   return (
     <CardStyled>
       <div className="poster">
-        <img width="400" src={API_URL + movie.poster.url} alt={movie.title} />
+        <img className="movie__image" src={API_URL + movie.poster.url} alt="" />
       </div>
       <div className="body">
         <h3>{movie.title}</h3>
@@ -22,6 +22,11 @@ const CardStyled = styled.div`
   border-radius: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   margin-top: 50px;
+  .poster {
+    .movie__image {
+      width: 100%;
+    }
+  }
 
   .body {
     padding: 20px;
